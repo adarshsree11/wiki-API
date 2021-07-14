@@ -90,6 +90,19 @@ app.route("/articles/:articleTitle")
         })
 })
 
+.patch(function(req, res){
+    Article.update({title: req.params.articleTitle},
+        {$set: req.body}, 
+        function(err, result){
+            if(!err){
+                res.send("successfully updated article!");
+            }
+            else{
+                res.send(err);
+            }
+        })
+})
+
 app.listen(3000, function(){
     console.log('server running at port 3000');
 })
