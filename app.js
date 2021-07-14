@@ -33,6 +33,21 @@ app.get("/articles", function(req, res){
     })
 })
 
+app.post("/articles", function(req, res){
+    const newArticle = new Article({
+        title: req.body.title,
+        content: req.body.content
+    })
+    newArticle.save(function(err){
+        if(!err){
+            console.log("Successfully added new article");
+        }
+        else{
+            console.log(err);
+        }
+    });
+})
+
 app.listen(3000, function(){
     console.log('server running at port 3000');
 })
