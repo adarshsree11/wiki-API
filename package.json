@@ -4,5 +4,23 @@
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "mongoose": "^5.13.2"
-  }
+  },
+  "name": "wiki-api",
+  "description": "Learning to create my own RESTful API",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adarshsree11/wiki-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adarshsree11/wiki-API/issues"
+  },
+  "homepage": "https://github.com/adarshsree11/wiki-API#readme"
 }
